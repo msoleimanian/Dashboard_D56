@@ -264,7 +264,7 @@ def SimulationConstructor():
             import requests
             import json
 
-            url = 'https://7b44-35-203-144-212.ngrok-free.app/LeavesCount_prediction'
+            url = 'https://bc00-34-133-152-227.ngrok-free.app/LeavesCount_prediction'
 
             # Replace with your Ngrok URL
             potnumberlist = []
@@ -367,7 +367,7 @@ def SimulationConstructor():
 
                 html_content = f"""
                                         <div style="border: 5px solid #333333; padding:10px; border-radius:5px;">
-                                            <h4 style="color: {filtered_df['subpotnumber']}; ">Crop Status: {filtered_df['status'].values[0]}</h2>
+                                            <h4 style="color: {filtered_df['subpotnumber']}; ">Crop Status: good</h2>
                                             <h4>Current Crop Traits</h2>
                                             <div style="overflow-x:auto;">
                                             <table>
@@ -386,7 +386,7 @@ def SimulationConstructor():
                                         """
                 html_content = f"""
                                                 <div style="border: 5px solid #333333; padding:10px; border-radius:5px;">
-                                                    <h4 style="color: {filtered_df['subpotnumber']}; ">Crop Status in future: {filtered_df['status'].values[0]}</h2>
+                                                    <h4 style="color: {filtered_df['subpotnumber']}; ">Crop Status in future: Good</h2>
                                                     <table border='1'>
                                                         <tr>
                                                             <th>Leaf Count</th>
